@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const hbs = require("hbs");
 const app = express();
+app.disable('x-powered-by');
 const PORT = process.env.PORT;
 
 //Handlebars
